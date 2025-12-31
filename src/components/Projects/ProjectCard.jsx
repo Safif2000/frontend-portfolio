@@ -1,0 +1,90 @@
+import { motion } from 'framer-motion';
+import { ExternalLink, Github, ArrowRight } from 'lucide-react';
+import styles from './ProjectCard.module.css';
+
+const ProjectCard = ({ project, index }) => {
+  return (
+    <motion.div
+      className={styles.card}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-100px' }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      whileHover={{ y: -12 }}
+    >
+      <div className={styles.imageContainer}>
+        <div className={styles.imagePlaceholder}>
+          <div className={styles.imageGradient} />
+          <div className={styles.imagePattern}>
+            <div className={styles.patternLine} />
+            <div className={styles.patternLine} />
+            <div className={styles.patternLine} />
+          </div>
+        </div>
+        <motion.div
+          className={styles.overlay}
+          initial={{ opacity: 0 }}
+          whileHover={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          <div className={styles.overlayContent}>
+            <p className={styles.overlayDescription}>{project.description}</p>
+            <div className={styles.overlayButtons}>
+              {project.demo && (
+                <motion.a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.overlayButton}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <ExternalLink size={18} />
+                  Live Demo
+                </motion.a>
+              )}
+              {project.github && (
+                <motion.a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.overlayButton} ${styles.secondary}`}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Github size={18} />
+                  Code
+                </motion.a>
+              )}
+            </div>
+          </div>
+        </motion.div>
+      </div>
+      
+      <div className={styles.content}>
+        <div className={styles.header}>
+          <h3 className={styles.title}>{project.title}</h3>
+          <motion.div
+            className={styles.arrowIcon}
+            whileHover={{ x: 5 }}
+            transition={{ duration: 0.2 }}
+          >
+            <ArrowRight size={20} />
+          </motion.div>
+        </div>
+        
+        <p className={styles.description}>{project.shortDescription}</p>
+        
+        <div className={styles.tags}>
+          {project.techStack.map((tech) => (
+            <span key={tech} className={styles.tag}>
+              {tech}
+            </span>
+          ))}
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
+export default ProjectCard;
