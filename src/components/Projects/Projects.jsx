@@ -27,49 +27,42 @@ const Projects = () => {
       github: 'https://github.com/Safif2000/Quiz-Modern-Interactive-Quiz-Platform',
     },
     {
-      title: 'Task Management SaaS',
+      title: 'Soniq-Music-Streaming ',
+      image: "public/images/soniq.png",
       shortDescription: 'Collaborative task management with real-time updates, drag-and-drop, and team collaboration.',
       description:
         'A modern task management application designed for teams. Features real-time collaboration, intuitive drag-and-drop interface, advanced filtering, and seamless integration with popular tools.',
       techStack: ['React', 'TypeScript', 'Framer Motion', 'Zustand', 'WebSockets'],
-      demo: 'https://example.com',
-      github: 'https://github.com',
+      demo: 'https://soniq-music-streaming.netlify.app/',
+      github: 'https://github.com/Safif2000/SONIQ-Music-Streaming-App',
     },
+    
     {
-      title: 'Analytics Dashboard',
-      shortDescription: 'Comprehensive analytics dashboard with data visualization, metrics, and reporting features.',
-      description:
-        'A powerful analytics dashboard that transforms complex data into actionable insights. Features interactive charts, customizable reports, real-time updates, and export capabilities.',
-      techStack: ['React', 'TypeScript', 'D3.js', 'Chart.js', 'Material-UI'],
-      demo: 'https://example.com',
-      github: 'https://github.com',
-    },
-    {
-      title: 'Social Media Platform',
+      title: 'Todo-Task-Manager',
       shortDescription: 'Modern social platform with real-time feeds, messaging, and content creation tools.',
       description:
         'A feature-rich social media platform with real-time updates, direct messaging, content creation tools, and advanced privacy controls. Built for scalability and performance.',
       techStack: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Redis'],
-      demo: 'https://example.com',
-      github: 'https://github.com',
+      demo: 'https://todo-tasks-manage.netlify.app/',
+      github: 'https://github.com/Safif2000/Todo-Task-manager',
     },
     {
-      title: 'Learning Management System',
+      title: 'Weather-Dashboard',
       shortDescription: 'Educational platform with course management, progress tracking, and interactive content.',
       description:
         'A comprehensive LMS platform that enables educators to create, manage, and deliver courses. Features include progress tracking, interactive quizzes, video streaming, and certificate generation.',
       techStack: ['React', 'Node.js', 'MongoDB', 'Express', 'AWS'],
-      demo: 'https://example.com',
-      github: 'https://github.com',
+      demo: 'https://weatherweb-dashboard.netlify.app/',
+      github: 'https://github.com/Safif2000/Weather-Dashboard-',
     },
     {
-      title: 'Financial Dashboard',
+      title: 'Snake-Game',
       shortDescription: 'Personal finance tracker with budgeting, expense analysis, and investment insights.',
       description:
         'A sophisticated financial dashboard for managing personal finances. Features include budget tracking, expense categorization, investment portfolio analysis, and financial goal setting.',
       techStack: ['React', 'TypeScript', 'Recharts', 'Firebase', 'Plaid API'],
-      demo: 'https://example.com',
-      github: 'https://github.com',
+      demo: 'https://snake-games101.netlify.app/',
+      github: 'https://github.com/Safif2000/snake-game',
     },
   ];
 
