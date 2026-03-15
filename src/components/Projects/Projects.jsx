@@ -29,9 +29,9 @@ const Projects = () => {
     {
       title: 'Soniq-Music-Streaming ',
       image: "public/images/soniq.png",
-      shortDescription: 'Collaborative task management with real-time updates, drag-and-drop, and team collaboration.',
+      shortDescription: 'A fully responsive music player with real-time MP3 streaming, Context API state management, and localStorage persistence for themes, likes, and playlists—all styled with pure CSS Custom Properties.',
       description:
-        'A modern task management application designed for teams. Features real-time collaboration, intuitive drag-and-drop interface, advanced filtering, and seamless integration with popular tools.',
+        'A high-performance music streaming platform with Neumorphic design, featuring Live Search, Shuffle/Repeat logic, and a unique fullscreen vinyl-animated mobile player.',
       techStack: ['React', 'TypeScript', 'Framer Motion', 'Zustand', 'WebSockets'],
       demo: 'https://soniq-music-streaming.netlify.app/',
       github: 'https://github.com/Safif2000/SONIQ-Music-Streaming-App',
@@ -39,27 +39,27 @@ const Projects = () => {
     
     {
       title: 'Todo-Task-Manager',
-      shortDescription: 'Modern social platform with real-time feeds, messaging, and content creation tools.',
+      shortDescription: 'A premium, accessible task management tool with drag-and-drop, priority filters, and animated stats, designed with a sophisticated glassmorphism UI.',
       description:
-        'A feature-rich social media platform with real-time updates, direct messaging, content creation tools, and advanced privacy controls. Built for scalability and performance.',
+        'A high-performance, glassmorphism-styled React task manager featuring a three-level priority system, drag-and-drop reordering, and full localStorage persistence for a seamless productivity experience.',
       techStack: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Redis'],
       demo: 'https://todo-tasks-manage.netlify.app/',
       github: 'https://github.com/Safif2000/Todo-Task-manager',
     },
     {
       title: 'Weather-Dashboard',
-      shortDescription: 'Educational platform with course management, progress tracking, and interactive content.',
+      shortDescription: 'A fully responsive weather application built with Tailwind CSS and WeatherAPI.com, offering live search functionality, animated SVG gauges, and a sophisticated glassmorphism UI with a live updating sidebar clock.',
       description:
-        'A comprehensive LMS platform that enables educators to create, manage, and deliver courses. Features include progress tracking, interactive quizzes, video streaming, and certificate generation.',
+        'A premium weather analytics platform with interactive charts, real-time geolocation search, and customized data visualization cards for wind, humidity, and UV metrics.',
       techStack: ['React', 'Node.js', 'MongoDB', 'Express', 'AWS'],
       demo: 'https://weatherweb-dashboard.netlify.app/',
       github: 'https://github.com/Safif2000/Weather-Dashboard-',
     },
     {
       title: 'Snake-Game',
-      shortDescription: 'Personal finance tracker with budgeting, expense analysis, and investment insights.',
+      shortDescription: 'A dynamic and interactive Snake Game featuring a custom gaming theme, real-time score tracking, and seamless start/pause/stop controls for an engaging user experience.',
       description:
-        'A sophisticated financial dashboard for managing personal finances. Features include budget tracking, expense categorization, investment portfolio analysis, and financial goal setting.',
+        'A logic-based arcade application built with a focus on state management, featuring an end-game results dashboard and a "Try Again" system for continuous play.',
       techStack: ['React', 'TypeScript', 'Recharts', 'Firebase', 'Plaid API'],
       demo: 'https://snake-games101.netlify.app/',
       github: 'https://github.com/Safif2000/snake-game',
