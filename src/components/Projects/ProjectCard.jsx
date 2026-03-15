@@ -15,16 +15,16 @@ const ProjectCard = ({ project, index }) => {
       <div className={styles.imageContainer}>
         <div className={styles.imagePlaceholder}>
           <div className={styles.imageGradient} />
-          {/* <div className={styles.imagePattern}>
+          <div className={styles.imagePattern}>
             <div className={styles.patternLine} />
             <div className={styles.patternLine} />
             <div className={styles.patternLine} />
-          </div> */}
-          <img 
+          </div>
+          {/* <img 
     src={project.image} 
     alt={project.title} 
     className={styles.projectImage} 
-  />
+  /> */}
         </div>
         <motion.div
           className={styles.overlay}
