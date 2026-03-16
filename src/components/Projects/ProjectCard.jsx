@@ -13,6 +13,7 @@ const ProjectCard = ({ project, index }) => {
       whileHover={{ y: -12 }}
     >
       <div className={styles.imageContainer}>
+        
         <div className={styles.imagePlaceholder}>
           <div className={styles.imageGradient} />
           <div className={styles.imagePattern}>
@@ -20,66 +21,88 @@ const ProjectCard = ({ project, index }) => {
             <div className={styles.patternLine} />
             <div className={styles.patternLine} />
           </div>
-          {/* <img 
-    src={project.image} 
-    alt={project.title} 
-    className={styles.projectImage} 
-  /> */}
         </div>
-        <motion.div
-          className={styles.overlay}
-          initial={{ opacity: 0 }}
-          whileHover={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
-        >
+
+        {/* Desktop Overlay */}
+        <div className={styles.overlay}>
           <div className={styles.overlayContent}>
-            <p className={styles.overlayDescription}>{project.description}</p>
+            <p className={styles.overlayDescription}>
+              {project.description}
+            </p>
+
             <div className={styles.overlayButtons}>
               {project.demo && (
-                <motion.a
+                <a
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.overlayButton}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
                 >
                   <ExternalLink size={18} />
                   Live Demo
-                </motion.a>
+                </a>
               )}
+
               {project.github && (
-                <motion.a
+                <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${styles.overlayButton} ${styles.secondary}`}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
                 >
                   <Github size={18} />
                   Code
-                </motion.a>
+                </a>
               )}
             </div>
           </div>
-        </motion.div>
+        </div>
+
+        {/* Mobile Buttons */}
+        <div className={styles.mobileButtons}>
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.overlayButton}
+            >
+              <ExternalLink size={18} />
+              Live Demo
+            </a>
+          )}
+
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${styles.overlayButton} ${styles.secondary}`}
+            >
+              <Github size={18} />
+              Code
+            </a>
+          )}
+        </div>
+
       </div>
-      
+
       <div className={styles.content}>
         <div className={styles.header}>
           <h3 className={styles.title}>{project.title}</h3>
+
           <motion.div
             className={styles.arrowIcon}
             whileHover={{ x: 5 }}
-            transition={{ duration: 0.2 }}
           >
             <ArrowRight size={20} />
           </motion.div>
         </div>
-        
-        <p className={styles.description}>{project.shortDescription}</p>
-        
+
+        <p className={styles.description}>
+          {project.shortDescription}
+        </p>
+
         <div className={styles.tags}>
           {project.techStack.map((tech) => (
             <span key={tech} className={styles.tag}>
