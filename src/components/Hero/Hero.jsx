@@ -165,7 +165,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Stats */}
-          <motion.div
+          {/* <motion.div
             variants={itemVariants}
             className={styles.stats}
           >
@@ -187,7 +187,7 @@ const Hero = () => {
               <span className={styles.statNumber}>100%</span>
               <span className={styles.statLabel}>Client Satisfaction</span>
             </div>
-          </motion.div>
+          </motion.div> */}
 
         </motion.div>
 
@@ -242,7 +242,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div
+      {/* <motion.div
         className={styles.scrollIndicator}
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
@@ -250,7 +250,7 @@ const Hero = () => {
       >
         <div className={styles.scrollLine} />
         <span className={styles.scrollText}>Scroll</span>
-      </motion.div>
+      </motion.div> */}
 
     </section>
   );
