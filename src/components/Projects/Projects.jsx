@@ -39,6 +39,7 @@ const Projects = () => {
     
     {
       title: 'Todo-Task-Manager',
+      image: "public/images/todo-task.webp",
       shortDescription: 'A premium, accessible task management tool with drag-and-drop, priority filters, and animated stats, designed with a sophisticated glassmorphism UI.',
       description:
         'A high-performance, glassmorphism-styled React task manager featuring a three-level priority system, drag-and-drop reordering, and full localStorage persistence for a seamless productivity experience.',
@@ -48,6 +49,7 @@ const Projects = () => {
     },
     {
       title: 'Weather-Dashboard',
+      image: "public/images/weather-dashboard.webp",
       shortDescription: 'A fully responsive weather application built with Tailwind CSS and WeatherAPI.com, offering live search functionality, animated SVG gauges, and a sophisticated glassmorphism UI with a live updating sidebar clock.',
       description:
         'A premium weather analytics platform with interactive charts, real-time geolocation search, and customized data visualization cards for wind, humidity, and UV metrics.',
@@ -57,6 +59,7 @@ const Projects = () => {
     },
     {
       title: 'Snake-Game',
+      image: "public/images/snake-game.webp",
       shortDescription: 'A dynamic and interactive Snake Game featuring a custom gaming theme, real-time score tracking, and seamless start/pause/stop controls for an engaging user experience.',
       description:
         'A logic-based arcade application built with a focus on state management, featuring an end-game results dashboard and a "Try Again" system for continuous play.',

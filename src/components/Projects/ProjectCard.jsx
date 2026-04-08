@@ -3,6 +3,12 @@ import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 import styles from './ProjectCard.module.css';
 
 const ProjectCard = ({ project, index }) => {
+  const handleArrowClick = () => {
+    if (project.demo) {
+      window.open(project.demo, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   return (
     <motion.div
       className={styles.card}
@@ -14,7 +20,19 @@ const ProjectCard = ({ project, index }) => {
     >
       <div className={styles.imageContainer}>
         
-        <div className={styles.imagePlaceholder}>
+        {project.image ? (
+          <img
+            src={project.image}
+            alt={project.title}
+            className={styles.projectImage}
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextSibling.style.display = 'flex';
+            }}
+          />
+        ) : null}
+
+        <div className={styles.imagePlaceholder} style={project.image ? { display: 'none' } : {}}>
           <div className={styles.imageGradient} />
           <div className={styles.imagePattern}>
             <div className={styles.patternLine} />
@@ -92,8 +110,11 @@ const ProjectCard = ({ project, index }) => {
           <h3 className={styles.title}>{project.title}</h3>
 
           <motion.div
-            className={styles.arrowIcon}
+            className={`${styles.arrowIcon} ${project.demo ? styles.arrowClickable : ''}`}
             whileHover={{ x: 5 }}
+            onClick={handleArrowClick}
+            title={project.demo ? 'Open Live Demo' : ''}
+            style={{ cursor: project.demo ? 'pointer' : 'default' }}
           >
             <ArrowRight size={20} />
           </motion.div>

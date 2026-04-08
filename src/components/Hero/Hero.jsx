@@ -192,7 +192,7 @@ const Hero = () => {
         </motion.div>
 
         {/* Code Window Visual */}
-        <motion.div
+        {/* <motion.div
           className={styles.visual}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -237,8 +237,25 @@ const Hero = () => {
             </div>
 
           </div>
-        </motion.div>
+        </motion.div> */}
+{/* ✅ Updated Visual Section: Profile Image & Integrated Code Window */}
+<motion.div
+  className={styles.visual}
+  initial={{ opacity: 0, x: 50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1, delay: 0.5 }}
+>
+  <div className={styles.profileContainer}>
+    {/* Profile Image - image_0.png reference */}
+    <img
+      src="/public/images/afif.webp" // Make sure to replace this with your actual image path
+      alt="Syed Muhammad Afif"
+      className={styles.profileImage}
+    />
 
+    
+  </div>
+</motion.div>
       </div>
 
       {/* Scroll Indicator */}

@@ -140,7 +140,7 @@
 }
 
 .overlayButton.secondary {
-  background: rgba(255, 255, 255, 0.1);
+  background:#0f172a;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #f8fafc;
 }
@@ -238,4 +238,20 @@
    background: #373b42;
  }
 
+}
+.arrowClickable {
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.arrowClickable:hover {
+  background: rgba(6, 182, 212, 0.25);
+  border-color: rgba(6, 182, 212, 0.6);
 }

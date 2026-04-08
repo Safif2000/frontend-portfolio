@@ -455,12 +455,27 @@
 
 }
 
+@media (max-width: 430px) {
+  .name {
+  font-size: 1.5rem;
+   
+}
+.profileImage {
+  width: 300px !important;
+  height: 400px !important;
+ }
+}
+
 
 @media (max-width: 414px) {
   .name {
   font-size: 1.5rem;
    
 }
+.profileImage {
+  width: 250px !important;
+  height: 300px !important;
+ }
 }
 
 @media (max-width: 385px) {
@@ -468,11 +483,50 @@
   
   font-size: 1rem;
   }
+  .profileImage {
+  width: 250px !important;
+  height: 300px !important;
+ }
 }
 
 @media (max-width: 375px) {
  .greeting {
   
   font-size: 0.8rem;
+  }
+  .profileImage {
+  width: 250px !important;
+  height: 300px !important;
+ }
+
+}
+
+
+
+
+.profileContainer {
+  display: flex;
+  align-items: flex-start; /* Align image to top, text wraps naturally */
+  gap: 2rem; /* Spacing between image and code window */
+  max-width: 800px; /* Overall max width */
+}
+
+
+.profileImage {
+  width: 500px; /* Image diameter */
+  height: 500px;
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Ensures image aspect ratio is maintained inside circle */
+  border: 4px solid rgba(6, 182, 212, 0.3); /* Themed cyan border */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Depth effect */
+  background-color: #0f172a; /* Fallback bg if image is missing */
+}
+
+
+@media (max-width: 1200px) {
+  .profileContainer {
+    flex-direction: column; /* Stack on smaller screens */
+    align-items: center;
+    gap: 1.5rem;
   }
 }
