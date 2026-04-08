@@ -248,7 +248,7 @@ const Hero = () => {
   <div className={styles.profileContainer}>
     {/* Profile Image - image_0.png reference */}
     <img
-      src="/public/images/afif.webp" // Make sure to replace this with your actual image path
+      src="/images/afif.webp" // Make sure to replace this with your actual image path
       alt="Syed Muhammad Afif"
       className={styles.profileImage}
     />
